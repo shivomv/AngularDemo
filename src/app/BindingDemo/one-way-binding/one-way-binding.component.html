@@ -1,0 +1,40 @@
+<!-- <h1 class="display-4">{{dynamicName}} {{25*25}} </h1>
+
+<h1>{{appStatus ? "Your account activated" : "sign again"}} </h1>
+
+<h1>{{appStatus ? status1 : status2}} </h1>
+{{CalculateSquareOfNumber(25)}}
+
+<a href="https://angular.io/api/common/NgStyle">For NgStyle refer</a>
+
+    <div [ngStyle]="myStyle">
+        Here we have some demo text
+    </div>
+  
+<h3>we can also use properties by using class</h3>
+<div class="box" [ngClass]="mltClasses">
+  by property declaring binding
+</div>
+<h3> We want apply multiple class at the time then we have to use angular directives</h3>
+<div class="box" [ngClass]="'class1 class2 class3'">
+class binding
+</div> -->
+<h2 style="color:cornflowerblue;">2. PROPERTY BINDING [property]=data</h2>
+<input type="text" id="txtname" [value]="dynamicName" />
+<p style="color:crimson;">Note : property binding always use along wth square brackets with attribute</p>
+<input type="text" id="txtname1" bind-value="dynamicName" />
+<p style="color:crimson;">Note : or you can also useby removing square brackets and bind-name</p>
+<input type="text" id="txtname2" [value]="dynamicName" [disabled]="enable" />
+<input type="text" id="txtname3" [value]="dynamicName" [hidden]="true" />
+<input type="password" id="txtname4" [value]="dynamicName" />
+<br>
+
+
+<h1>Cart status : {{msg}} </h1>
+<h2 style="color:blueviolet">EVENT DEMO </h2>
+<h2>{{msg}}</h2>
+<div class="d-flex gap-2">
+    <button class="btn btn-primary" (click)="onAddCart()">Add to cart</button>
+    <br>
+    <button class="btn btn-primary" (click)="onRemoveCart()">Remove from cart</button>
+</div>

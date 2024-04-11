@@ -1,0 +1,35 @@
+<button (click)="AddtoCart2()">Add to Cart</button>
+<br>
+<input type="text" value = "Enter Some text" (change)="onChangeEvent($event)">
+{{textMessage}}
+<button value="Laptop" (click)="AddtoCart($event)" class="btn btn-success">Laptop</button>
+<button value="Mobile" (click)="AddtoCart($event)" class="btn btn-success">Mobile</button>
+<button value="Desktop" (click)="AddtoCart($event)" class="btn btn-success">Destop</button>
+<br>
+<h2>{{msg}}</h2>
+<h1 style="color:blue;">Template Reference Variable</h1>
+<p>Template variable help you use data from one part of a template in another part of the template.With template variable, you can perfrom task such as respond to user input
+or finally tune your application forms
+A template variable can refer to the following:
+a DOM element with a template
+a driective
+Template ref a  web component
+</p>
+<input type="text" #Inputinfo value="myinputtext" name="txt">
+<button (click) = "getInputInfo(Inputinfo)">Get Info</button>
+{{info}}
+<br>
+Enter you Name <input type="text" #uname placeholder="Enter user name" name="txt">
+<button (click) = "GreetingForTheDay(uname)">Say Hi</button>
+{{UserName}}
+
+<div class="vw-100 p-1 bg-dark mt-4"></div>
+<p>enter product name which you want to order</p>
+<input type="text" #productname placeholder="Enter product">
+<button (click)="ordersomething(productname)">order now</button>
+<br>
+{{anyname}}
+
+
+
+
